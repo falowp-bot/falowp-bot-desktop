@@ -1,18 +1,20 @@
 {
   "productName": "falowp-bot-desktop",
-  "version": "0.0.0",
-  "identifier": "com.tauri.dev",
+  "version": "1.0.0",
+  "identifier": "com.blr19c.falowp.bot.desktop",
   "build": {
     "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:1420",
     "beforeBuildCommand": "npm run build",
     "frontendDist": "../dist"
   },
-  "app": {"windows": [
+  "app": {
+    "windows": [
       {
-        "title": "falowp-bot-desktop",
-        "width": 800,
-        "height": 600
+        "title": "",
+        "width": 320,
+        "height": 440,
+        "resizable": false
       }
     ],
     "security": {
