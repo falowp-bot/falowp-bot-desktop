@@ -3,6 +3,7 @@ use tauri::{App, Manager};
 use crate::command::{get_login_cache, login};
 
 mod command;
+mod window;
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {

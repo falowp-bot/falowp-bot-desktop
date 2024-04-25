@@ -11,10 +11,12 @@
   "app": {
     "windows": [
       {
-        "title": "",
+        "title": "小花落Bot",
+        "label": "login",
         "width": 320,
         "height": 440,
-        "resizable": false
+        "resizable": false,
+        "url": "login.html"
       }
     ],
     "security": {

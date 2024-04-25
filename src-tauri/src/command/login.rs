@@ -2,11 +2,14 @@ use serde::{Deserialize, Serialize};
 use sled::{Config, Db};
 use tauri::{AppHandle, Manager};
 
+use crate::window::{close_login_window, open_main_window};
+
 //登录
 #[tauri::command]
 pub fn login(server_url: &str, password: &str, app_handle: AppHandle) -> String {
+    open_main_window(&app_handle);
+    close_login_window(&app_handle);
     set_login_cache(&server_url, &password, &app_handle);
-    println!("{}", server_url);
     return "".to_string();
 }
 
